@@ -15,8 +15,7 @@ const modelInfo = {
 	INPUT_NODE_NAME: 'TfPoseEstimator/image',
 	OUTPUT_NODE_NAME: 'TfPoseEstimator/Openpose/concat_stage7',
 	IN_WIDTH: 16 * 27,
-	IN_HEIGHT: 16 * 23,
-	OUT_DEPTH: 19
+	IN_HEIGHT: 16 * 23
 }
 
 const input = document.getElementById('i');

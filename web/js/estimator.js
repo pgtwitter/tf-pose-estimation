@@ -107,7 +107,7 @@ export class Estimator {
 
 	static _pairs_by_conn_With_coords_list(coords_list, heatMats, pafMats, size) {
 		const pairs_by_conn = [];
-		for (let i = 0; i < 19; i++) {
+		for (let i = 0; i < CocoPart.length; i++) {
 			const [part_idx1, part_idx2] = CocoPairs[i];
 			const [paf_x_idx, paf_y_idx] = CocoPairsNetwork[i];
 			const pairs = Estimator.score_pairs(
@@ -123,7 +123,7 @@ export class Estimator {
 		const [h, w] = size;
 		const coords_list = [];
 		const D = 2;
-		for (let i = 0; i < 19 - 1; i++) {
+		for (let i = 0; i < CocoPart.length - 1; i++) {
 			const coords = [];
 			coords_list.push(coords);
 			const heatMat = heatMats[i];

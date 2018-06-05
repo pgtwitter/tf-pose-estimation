@@ -11,7 +11,7 @@
 	"scripts": {
 		"watch": "NODE_ENV=development parcel --no-hmr --open index.html ",
 		"build": "NODE_ENV=production parcel build index.html --no-minify --public-url /",
-		"tfjs": "python 00saveWithModelWithMetaGraph.py;sh 01convertToTfjsModel.sh;sh 02copyFiles.sh",
+		"tfjs": "python 00saveTheModelWithMetaGraph.py;sh 01convertToTfjsModel.sh;sh 02copyFiles.sh",
 		"clean": "rm -rf .cache dist node_modules images saved_model web_model yarn-error.log"
 	},
 	"devDependencies": {
